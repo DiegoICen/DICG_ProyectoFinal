@@ -14,34 +14,34 @@ app.get('/postales/:postalcode', (req, res) => {
   const postalCode = req.params.postalcode;
   const data = {
     colonias: [],
-    city: '',
-    state: '',
+    ciudad: '',
+    estado: '',
   };
   if(!cpqro) {
     return res.send({
       data,
-      err: `missing database`
+      err: `No se encuentra lo que buscas`
     });
   }
   if(!postalCode) {
     return res.send({
       data,
-      err: `missing postal code ${postalCode}`
+      err: `No se encuentra tu cp: ${postalCode}`
     });
   }
   const resultPostal = cpqro.filter( postal => postal.cp === postalCode);
   if(!resultPostal[0]) {
     return res.send({
       data,
-      err: `not result for ${postalCode}`
+      err: `Np hay resultados para ${postalCode}`
     });
   }
   data.colonias = resultPostal.map(results => ({
-    name: results.asentamiento,
-    type: results.type,
+    nombre: results.asentamiento,
+    tipo: results.type,
   }))
-  data.state = resultPostal[0].estado;
-  data.city = resultPostal[0].municipio;
+  data.estado = resultPostal[0].estado;
+  data.ciudad = resultPostal[0].municipio;
   res.send({
     data,
     err: null
