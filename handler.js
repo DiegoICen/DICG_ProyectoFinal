@@ -19,21 +19,18 @@ app.get('/postales/:postalcode', (req, res) => {
   };
   if(!cpqro) {
     return res.send({
-      data,
-      err: `No se encuentra lo que buscas`
+      error: `No se encuentra lo que buscas`
     });
   }
   if(!postalCode) {
     return res.send({
-      data,
-      err: `No se encuentra tu cp: ${postalCode}`
+      error: `No se encuentra tu cp: ${postalCode}`
     });
   }
   const resultPostal = cpqro.filter( postal => postal.cp === postalCode);
   if(!resultPostal[0]) {
     return res.send({
-      data,
-      err: `Np hay resultados para ${postalCode}`
+      error: `No hay resultados para ${postalCode}`
     });
   }
   data.colonias = resultPostal.map(results => ({
@@ -44,7 +41,7 @@ app.get('/postales/:postalcode', (req, res) => {
   data.ciudad = resultPostal[0].municipio;
   res.send({
     data,
-    err: null
+    error: null
   });
 });
 
