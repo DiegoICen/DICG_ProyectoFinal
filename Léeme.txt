@@ -1,0 +1,7 @@
+Para este proyecto todas las pruebas se crearon levantando el servicio "sls offline" con el plug-in
+del cliente "Thunder Client", una vez activo el servicio se usa el URL dado para poder hacer la pruebas,
+p . ej: "http://localhost:3000/postales/{El CP que tu quieras}, y la respuesta será todas las colonias 
+a las que ese CP esta asignado.
+
+También se creo un docker-compose para poder crear un contenedor en el programa Docker,
+y se subio a un repositorio público en GitHub
