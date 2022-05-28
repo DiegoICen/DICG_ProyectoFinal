@@ -1,0 +1,37 @@
+{
+  "data": {
+    "colonias": [
+      {
+        "nombre": "Raquet Club",
+        "tipo": "Fraccionamiento"
+      },
+      {
+        "nombre": "Arco de Piedra",
+        "tipo": "Fraccionamiento"
+      },
+      {
+        "nombre": "El Salitre",
+        "tipo": "Colonia"
+      },
+      {
+        "nombre": "Cuitl\ufffdhuac",
+        "tipo": "Colonia"
+      },
+      {
+        "nombre": "Parque Industrial Jurica",
+        "tipo": "Zona industrial"
+      },
+      {
+        "nombre": "Palmares",
+        "tipo": "Fraccionamiento"
+      },
+      {
+        "nombre": "Lomas del Salitre",
+        "tipo": "Colonia"
+      }
+    ],
+    "ciudad": "Querétaro",
+    "estado": "Querétaro"
+  },
+  "error": null
+}

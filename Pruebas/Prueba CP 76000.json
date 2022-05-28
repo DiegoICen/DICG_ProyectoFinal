@@ -1,0 +1,37 @@
+{
+  "data": {
+    "colonias": [
+      {
+        "nombre": "Centro",
+        "tipo": "Colonia"
+      },
+      {
+        "nombre": "San José Inn",
+        "tipo": "Colonia"
+      },
+      {
+        "nombre": "La Cruz",
+        "tipo": "Fraccionamiento"
+      },
+      {
+        "nombre": "Rincón de San Andrés",
+        "tipo": "Fraccionamiento"
+      },
+      {
+        "nombre": "Mariano Escobedo",
+        "tipo": "Unidad habitacional"
+      },
+      {
+        "nombre": "Vicente Guerrero",
+        "tipo": "Unidad habitacional"
+      },
+      {
+        "nombre": "Rinconada de Morelos",
+        "tipo": "Unidad habitacional"
+      }
+    ],
+    "ciudad": "Querétaro",
+    "estado": "Querétaro"
+  },
+  "error": null
+}

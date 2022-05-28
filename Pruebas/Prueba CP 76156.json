@@ -1,0 +1,25 @@
+{
+  "data": {
+    "colonias": [
+      {
+        "nombre": "Constituyentes de 1824",
+        "tipo": "Colonia"
+      },
+      {
+        "nombre": "Los Eucaliptos",
+        "tipo": "Colonia"
+      },
+      {
+        "nombre": "San Gregorio",
+        "tipo": "Colonia"
+      },
+      {
+        "nombre": "Los Alcanfores Sección Norte",
+        "tipo": "Equipamiento"
+      }
+    ],
+    "ciudad": "Querétaro",
+    "estado": "Querétaro"
+  },
+  "error": null
+}
